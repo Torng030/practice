@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	string s;
+	stack<int> sta;
+	while(cin>>s){
+		if(s=="+"||s=="-"||s=="*"||s=="/"){
+			int a=sta.top();
+			sta.pop();
+			int b=sta.top();
+			sta.pop();
+			if(s=="+"){
+				sta.push(b+a);
+			}
+			if(s=="-"){
+				sta.push(b-a);
+			}
+			if(s=="*"){
+				sta.push(b*a);
+			}
+			if(s=="/"){
+				sta.push(b/a);
+			}
+		}
+		else{
+			sta.push(stoi(s));
+		}
+	}
+	cout<<sta.top()<<endl;
+}
+
+/*
+輸入後序表示式 計算結果
+用stack存輸入
+當輸入的是運算符
+則將stack頂端的值存入a,b
+而遇到不同運算符則做不同計算
+
+若輸入不是運算符
+就將字串轉為數字
+*/
