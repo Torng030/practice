@@ -2,13 +2,15 @@
 using namespace std;
 int main(){
 	string x; 
-	int odd=0,even=0; //计案计 
+	int odd=0,even=0; //濂囨暩鍋舵暩 
 	cin>>x;
 	for(int i=0;i<x.length();i++){ 
 		if(i%2==0) 
-			even+=x[i]-'0'; //ъ﹃案计场だ 
+			even+=x[i]-'0'; //鎶撳嚭瀛椾覆鍋舵暩鐨勯儴鍒嗕甫鐩稿姞 
 		else
-			odd+=x[i]-'0';  //獶案玥
+			odd+=x[i]-'0';  //闈炲伓鍓囧
 	}
 	cout<<abs(odd-even)<<endl;
 }
+
+
