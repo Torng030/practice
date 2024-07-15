@@ -2,9 +2,9 @@
 using namespace std;
 int main(){
 	int a,b,c;
-	vector<int> v;  //¥Îvector¦s¨ú¤T¨¤ªº¤T±øÃä 
+	vector<int> v;  //ç”¨vectorå­˜å–ä¸‰è§’çš„ä¸‰æ¢é‚Š 
 	cin>>a>>b>>c;
-	v.push_back(a);  //push_back:¦s¤Jvector 
+	v.push_back(a);  //push_back:å­˜å…¥vector 
 	v.push_back(b);
 	v.push_back(c);
 	sort(v.begin(),v.end());
@@ -27,3 +27,4 @@ int main(){
 		} 
 	}
 }
+
