@@ -2,21 +2,21 @@
 using namespace std;
 int main(){
 	//int fib[40];
-	long long int fib[50];  //>40­n¥Îlong long ·|Ãz±¼ 
+	long long int fib[50];  //>40è¦ç”¨long long æœƒçˆ†æ‰ 
 	int n,input;
 	fib[0]=1;
 	fib[1]=2;
-	for(int i=2;i<50;i++){  //§â¶O¤ó¼Æ¦C¦s°}¦C 
+	for(int i=2;i<50;i++){  //æŠŠè²»æ°æ•¸åˆ—å­˜é™£åˆ— 
 		fib[i]=fib[i-1]+fib[i-2];
 	}
-	cin>>n;  //nµ§´ú¸ê 
+	cin>>n;  //nç­†æ¸¬è³‡ 
 	while(n--){
-		cin>>input;  //´ú¸ê 
+		cin>>input;  //æ¸¬è³‡ 
 		cout<<input<<" = ";
 		
 		int index=0;
-		for(int i=48;i>=0;i--){  //¿é¤J´î¶O¦¡ªº­È 
-			if(input-fib[i]>=0){  //¬Û´î¬O¥¿ªº´N¿é¥X1 
+		for(int i=48;i>=0;i--){  //è¼¸å…¥æ¸›è²»å¼çš„å€¼ 
+			if(input-fib[i]>=0){  //ç›¸æ¸›æ˜¯æ­£çš„å°±è¼¸å‡º1 
 				cout<<"1";
 				input-=fib[i]; 
 				index=1;
