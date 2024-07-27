@@ -1,0 +1,10 @@
+給定一字串
+計算每字元出現的次數
+輸出字元對應之ascll&出現次數
+
+想法
+step1:用map1存字元的出現次數
+step2:用map2次數對應之ascii碼
+step3:vector存字元ascii 方便排序
+step4:次數由小到大輸出
+(次數一樣就看ascii 大的先)
